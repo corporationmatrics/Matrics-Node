@@ -1,0 +1,8 @@
+{
+  "name": "Matrics Node",
+  "description": "High-speed retail POS terminal, master SKU catalog & inventory matrix, real-time UPI QR billing, and voice-assisted storefront management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

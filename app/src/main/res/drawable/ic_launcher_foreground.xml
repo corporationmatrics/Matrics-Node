@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- 1. Ambient Drop Shadow behind Left Pillar -->
+    <path
+        android:pathData="M116,204 L186,144 L256,204 L186,254 L186,424 L116,374 Z"
+        android:fillColor="#000000"
+        android:fillAlpha="0.45" />
+
+    <!-- 2. Ambient Drop Shadow behind Right Pillar -->
+    <path
+        android:pathData="M396,204 L326,144 L256,204 L326,254 L326,424 L396,374 Z"
+        android:fillColor="#000000"
+        android:fillAlpha="0.45" />
+
+    <!-- 3. Ambient Shadow behind Center Crystal -->
+    <path
+        android:pathData="M256,184 L336,254 L256,324 L176,254 Z"
+        android:fillColor="#000000"
+        android:fillAlpha="0.55" />
+
+    <!-- 4. Left Pillar Vertical Body (Cyan-to-Deep-Blue Metallic Anisotropic Gradient) -->
+    <path
+        android:pathData="M120,370 L120,200 L186,250 L186,420 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="120"
+                android:startY="200"
+                android:endX="186"
+                android:endY="420"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#00D2FF" />
+                <item android:offset="0.45" android:color="#008FD5" />
+                <item android:offset="1.0" android:color="#003580" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Left Pillar Top Angled Bevel / Chamfer (Cyan Specular Reflection) -->
+    <path
+        android:pathData="M120,200 L186,140 L256,200 L186,250 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="120"
+                android:startY="140"
+                android:endX="256"
+                android:endY="250"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#7FE6FF" />
+                <item android:offset="0.3" android:color="#00B4F5" />
+                <item android:offset="1.0" android:color="#0070B8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Left Pillar Inner Chamfer Highlight Line -->
+    <path
+        android:pathData="M186,140 L120,200 L120,370"
+        android:strokeWidth="2.5"
+        android:strokeColor="#B8F4FF"
+        android:strokeAlpha="0.85"
+        android:strokeLineCap="round" />
+
+    <!-- 5. Right Pillar Vertical Body (Cyan-to-Deep-Blue Metallic Gradient) -->
+    <path
+        android:pathData="M392,370 L392,200 L326,250 L326,420 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="392"
+                android:startY="200"
+                android:endX="326"
+                android:endY="420"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#0099DD" />
+                <item android:offset="0.5" android:color="#005B9E" />
+                <item android:offset="1.0" android:color="#002960" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Pillar Top Angled Bevel (Specular Highlight) -->
+    <path
+        android:pathData="M392,200 L326,140 L256,200 L326,250 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="392"
+                android:startY="140"
+                android:endX="256"
+                android:endY="250"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#60D8FF" />
+                <item android:offset="0.4" android:color="#0088CE" />
+                <item android:offset="1.0" android:color="#004D8C" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Right Pillar Inner Chamfer Highlight Line -->
+    <path
+        android:pathData="M326,140 L392,200 L392,370"
+        android:strokeWidth="2.5"
+        android:strokeColor="#A8EDFF"
+        android:strokeAlpha="0.8"
+        android:strokeLineCap="round" />
+
+    <!-- 6. Circuit Board Data Flow Traces & Connections -->
+    <path
+        android:pathData="M186,250 L256,250 M326,250 L256,250 M148,222 L172,200 L172,170 M364,222 L340,200 L340,170 M150,290 L186,250 L220,290 M362,290 L326,250 L292,290"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.75"
+        android:strokeLineCap="round" />
+
+    <!-- Micro circuit node dots -->
+    <path
+        android:pathData="M172,170 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#00D2FF" />
+    <path
+        android:pathData="M340,170 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#00D2FF" />
+
+    <!-- 7. Central Crystal Diamond Core (Faceted Amber/Orange Jewel) -->
+    <!-- Base Diamond Body -->
+    <path
+        android:pathData="M256,180 L334,250 L256,320 L178,250 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="256"
+                android:startY="180"
+                android:endX="256"
+                android:endY="320"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF8A00" />
+                <item android:offset="0.5" android:color="#FF4500" />
+                <item android:offset="1.0" android:color="#9E1A00" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Diamond Facet 1 (Top Left - High Refractive Light) -->
+    <path
+        android:pathData="M256,180 L256,250 L178,250 Z"
+        android:fillAlpha="0.45">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="178"
+                android:startY="180"
+                android:endX="256"
+                android:endY="250"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF2A8" />
+                <item android:offset="1.0" android:color="#FFA000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Diamond Facet 2 (Top Right - Golden Sheen) -->
+    <path
+        android:pathData="M256,180 L334,250 L256,250 Z"
+        android:fillAlpha="0.30">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="256"
+                android:startY="180"
+                android:endX="334"
+                android:endY="250"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFE57F" />
+                <item android:offset="1.0" android:color="#E65100" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Diamond Facet 3 (Bottom Left - Dark Caustic Depth) -->
+    <path
+        android:pathData="M256,250 L256,320 L178,250 Z"
+        android:fillAlpha="0.35">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="178"
+                android:startY="250"
+                android:endX="256"
+                android:endY="320"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#BF360C" />
+                <item android:offset="1.0" android:color="#3E0B00" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Diamond Facet 4 (Bottom Right - Amber Base) -->
+    <path
+        android:pathData="M256,250 L334,250 L256,320 Z"
+        android:fillAlpha="0.50">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="256"
+                android:startY="250"
+                android:endX="334"
+                android:endY="320"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#D84315" />
+                <item android:offset="1.0" android:color="#5D1000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Crystal Sharp Facet Edges / Refraction Lines -->
+    <path
+        android:pathData="M256,180 L256,320 M178,250 L334,250 M256,180 L334,250 L256,320 L178,250 Z"
+        android:strokeWidth="1.8"
+        android:strokeColor="#FFE082"
+        android:strokeAlpha="0.75" />
+
+    <!-- 8. Chrome Spherical Nodes (Mirror Metal with Radial Specular) -->
+    <!-- Left Satellite Node (178, 250) -->
+    <path
+        android:pathData="M178,250 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="175"
+                android:centerY="247"
+                android:gradientRadius="9"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFFFF" />
+                <item android:offset="0.45" android:color="#CFD8DC" />
+                <item android:offset="0.85" android:color="#607D8B" />
+                <item android:offset="1.0" android:color="#263238" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M178,250 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"
+        android:strokeWidth="1.2"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.9" />
+
+    <!-- Right Satellite Node (334, 250) -->
+    <path
+        android:pathData="M334,250 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="331"
+                android:centerY="247"
+                android:gradientRadius="9"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFFFF" />
+                <item android:offset="0.45" android:color="#CFD8DC" />
+                <item android:offset="0.85" android:color="#607D8B" />
+                <item android:offset="1.0" android:color="#263238" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M334,250 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0"
+        android:strokeWidth="1.2"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.9" />
+
+    <!-- Center Main Chrome Sphere (256, 250) -->
+    <!-- Drop shadow -->
+    <path
+        android:pathData="M256,252 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0"
+        android:fillColor="#000000"
+        android:fillAlpha="0.6" />
+
+    <path
+        android:pathData="M256,250 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="252"
+                android:centerY="245"
+                android:gradientRadius="15"
+                android:type="radial">
+                <item android:offset="0.0" android:color="#FFFFFF" />
+                <item android:offset="0.35" android:color="#ECEFF1" />
+                <item android:offset="0.70" android:color="#78909C" />
+                <item android:offset="1.0" android:color="#1A242B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Sharp mirror rim specular -->
+    <path
+        android:pathData="M256,250 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.95" />
+
+    <!-- Microscopic Point Highlight Glint -->
+    <path
+        android:pathData="M251,244 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0"
+        android:fillColor="#FFFFFF" />
+
+</vector>
